@@ -30,8 +30,8 @@ public class index{
 		System.out.println("Heads: "+count_h+", Tails: "+count_t);
 	}
 	public void WinOrLose(){
-		if(count_h > count_t) System.out.println("You won!");
-		else System.out.println("You lost");
+		if(count_h > count_t) System.out.println(name+" won!");
+		else System.out.println(name+" lost");
 	}
 
 	public static void main(String[] args){
