@@ -21,9 +21,14 @@ public class index{
 		
 		System.out.println("Heads: "+count_h+", Tails: "+count_t);
 	}
+	public void WinOrLose(){
+		if(count_h > count_t) System.out.println("You won!");
+		else System.out.println("You lost");
+	}
 
 	public static void main(String[] args){
 		index i = new index();
 		i.coinToss();
+		i.WinOrLose();
 	}
 }
