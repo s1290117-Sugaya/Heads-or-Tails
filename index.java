@@ -1,8 +1,16 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class index{
 	int count_h=0, count_t=0;
+	String name = "";
 
+	public void whoAreYou(){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Who are you?");
+		name = sc.next();
+		System.out.println("Hello, "+name+"!");
+	}
 	public String which(){
 		Random rand = new Random();
 		if(rand.nextInt(2) == 1){
@@ -28,6 +36,7 @@ public class index{
 
 	public static void main(String[] args){
 		index i = new index();
+		i.whoAreYou();
 		i.coinToss();
 		i.WinOrLose();
 	}
